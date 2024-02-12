@@ -1,0 +1,36 @@
+.item{
+    background:gray;
+}
+.ReactGridLayout{
+    position: relative;
+}
+.ReactGridLayout button{
+    cursor: grab;
+    z-index: 10;
+    text-transform: none;
+}
+.ReactGridLayout button:focus{
+    cursor: move;
+}
+.draggable-handle{
+    border-left: 3px dashed brown;
+    border-right: 3px dashed brown;
+    position: relative;
+    /* z-index: ; */
+}
+.draggable-handle::after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    border-top: 3px dashed brown;
+}
+.draggable-handle::after{
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    left: 0;
+    border-bottom: 3px dashed brown;
+}
